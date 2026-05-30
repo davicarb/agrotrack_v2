@@ -61,6 +61,32 @@ Porém, mesmo se tratando de dados fictícios, a eficácia dele é demonstrada a
 
 ---
 
+## ❓ Como rodar o projeto
+
+**1.** crie uma pasta chamada agrotrack_v2 na área de trabalho do seu pc;
+**2.** coloque dentro dela os arquivos do repositório:
+
+*web-rastreio-conteiner-agro.html*
+
+**a** note que *containers_entrada.xlsx* você deverá preencher com os codigos do container que você deseja que o robô preencha os dados.
+logo, é necessário que você crie essa planilha por conta própria e de exatamente o nome descrito acima.
+
+siga o modelo descrito no site: LDCU para líquidos, AGRO para soja ou milho, RFGR para refrigerados ou GRAN para granel.
+o número que vem após essas letras pode ser qualquer um.
+
+o código do contêiner que você deseja obter os resultados deve permanecer na coluna A a partir da linha 2, para que o power automate consiga funcionar corretamente.
+você pode adicionar quantos contêineres quiser. é ilimitado, desde que haja espaço no seu computador!
+
+**3.** crie uma pasta vazia chamada "Execucoes"
+**4.** crie um novo fluxo no power automate desktop
+**5.** cole o código do power automate que está neste repo do github dentro do seu fluxo
+**6.** rode o fluxo
+**7.** deixe o robô trabalhar por você enquanto toma um café!
+
+## 📈 Aonde ficarão as planilhas produzidas pelo power automate?
+As planilhas produzidas ficarão dentro das pastas de cada execução dentro da pasta "Execucoes", contendo a data exata de quando aquela execução aconteceu.
+Exemplo de nome de planilha após execução bem-sucedida: *agrotrackreport_2026-05-30_16-55-56*
+
 ## 🛠️ Stack
 
 `HTML/CSS/JS` · `Power Automate Desktop` · `Excel` · *(futuro: API REST + banco de dados real)*
