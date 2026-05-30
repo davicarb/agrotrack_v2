@@ -254,33 +254,33 @@ const agora = () => new Date().toLocaleString('pt-BR', { day:'2-digit', month:'2
 const isoNow = () => new Date().toISOString();
 
 const DATA_BASE = {
-  '123': { status:'transito', statusLabel:'Em Trânsito', badgeClass:'badge-transito', produto:'Soja — Granel', peso:'27,5 ton', modal:'Intermodal (Ferro + Marítimo)', navio:'MV Cerrado Trader', bl:'BL-2025-AGR-009821', origem:'Rondonópolis, MT', destino:'Porto de Santos, SP', eta:'15/06/2025', embarque:'01/06/2025', timeline:[
+  '123': { status:'transito', statusLabel:'Em Trânsito', badgeClass:'badge-transito', produto:'Soja — Granel', peso:'27,5 ton', modal:'Intermodal (Ferro + Marítimo)', navio:'MV Campo Verde', bl:'BL-2025-AGR-001147', origem:'Rondonópolis, MT', destino:'Porto de Santos, SP', eta:'15/06/2025', embarque:'01/06/2025', timeline:[
     { dot:'done', data:'01/06/2025 07:00', evento:'Carregamento concluído', local:'Terminal Graneleiro, Rondonópolis-MT' },
-    { dot:'done', data:'02/06/2025 14:30', evento:'Saída por ferrovia (ALL)', local:'Estação Rondonópolis — FCA' },
-    { dot:'done', data:'05/06/2025 09:15', evento:'Chegada ao terminal intermodal', local:'Terminal TIPLAM, Cubatão-SP' },
+    { dot:'done', data:'02/06/2025 14:30', evento:'Saída por ferrovia', local:'Estação Central — Malha Oeste' },
+    { dot:'done', data:'05/06/2025 09:15', evento:'Chegada ao terminal intermodal', local:'Terminal Intermodal, Cubatão-SP' },
     { dot:'active', data:'06/06/2025 11:00', evento:'🚢 Em transbordo para navio', local:'Porto de Santos, Píer 21' },
-    { dot:'', data:'15/06/2025 (Previsto)', evento:'Chegada ao destino', local:'Port of Rotterdam — NL' },
+    { dot:'', data:'15/06/2025 (Previsto)', evento:'Chegada ao destino', local:'Porto de Roterdã — NL' },
   ]},
-  '456': { status:'despachado', statusLabel:'Despachado — Alfândega Liberada', badgeClass:'badge-despachado', produto:'Milho — Granel', peso:'24,0 ton', modal:'Rodoviário + Marítimo', navio:'MV Pampa Pioneer', bl:'BL-2025-AGR-007654', origem:'Cascavel, PR', destino:'Porto de Paranaguá, PR', eta:'08/06/2025', embarque:'28/05/2025', timeline:[
-    { dot:'done', data:'28/05/2025 06:00', evento:'Carregamento concluído na fazenda', local:'Fazenda Campo Fértil, Cascavel-PR' },
+  '456': { status:'despachado', statusLabel:'Despachado — Alfândega Liberada', badgeClass:'badge-despachado', produto:'Milho — Granel', peso:'24,0 ton', modal:'Rodoviário + Marítimo', navio:'MV Planalto Star', bl:'BL-2025-AGR-002283', origem:'Cascavel, PR', destino:'Porto de Paranaguá, PR', eta:'08/06/2025', embarque:'28/05/2025', timeline:[
+    { dot:'done', data:'28/05/2025 06:00', evento:'Carregamento concluído na fazenda', local:'Fazenda Terra Nova, Cascavel-PR' },
     { dot:'done', data:'28/05/2025 18:00', evento:'Chegada ao porto seco', local:'Porto Seco Cascavel, PR' },
     { dot:'done', data:'30/05/2025 10:00', evento:'Vistoria e liberação aduaneira', local:'Recinto Aduaneiro, Paranaguá-PR' },
     { dot:'done', data:'31/05/2025 14:00', evento:'✅ DI aprovada', local:'Receita Federal — Paranaguá' },
     { dot:'active', data:'06/06/2025', evento:'Embarcado — navio em rota', local:'Porto de Paranaguá — em alto-mar' },
-    { dot:'', data:'08/06/2025 (Previsto)', evento:'Descarga no destino', local:'Port of Cartagena — CO' },
+    { dot:'', data:'08/06/2025 (Previsto)', evento:'Descarga no destino', local:'Porto de Cartagena — CO' },
   ]},
-  'rfgr': { status:'transito', statusLabel:'Em Trânsito (Refrigerado)', badgeClass:'badge-transito', produto:'Carne Bovina — Refrigerada', peso:'18,2 ton', modal:'Rodoviário', navio:'Caminhão TK-8822-SP', bl:'CRT-2025-FRI-003421', origem:'Campo Grande, MS', destino:'Porto de Itajaí, SC', eta:'09/06/2025', embarque:'06/06/2025', timeline:[
-    { dot:'done', data:'06/06/2025 04:00', evento:'Saída do frigorífico', local:'Frigorífico Pantanal, Campo Grande-MS' },
+  'rfgr': { status:'transito', statusLabel:'Em Trânsito (Refrigerado)', badgeClass:'badge-transito', produto:'Carne Bovina — Refrigerada', peso:'18,2 ton', modal:'Rodoviário', navio:'Caminhão BV-4431-MS', bl:'CRT-2025-FRI-007752', origem:'Campo Grande, MS', destino:'Porto de Itajaí, SC', eta:'09/06/2025', embarque:'06/06/2025', timeline:[
+    { dot:'done', data:'06/06/2025 04:00', evento:'Saída do frigorífico', local:'Frigorífico Central MS, Campo Grande-MS' },
     { dot:'active', data:'06/06/2025 — Em rota', evento:'🚛 Em trânsito rodoviário', local:'BR-163 — próx. Maracajú-MS' },
     { dot:'', data:'08/06/2025 (Previsto)', evento:'Chegada ao terminal frigorífico', local:'Terminal Frio, Porto Itajaí-SC' },
     { dot:'', data:'09/06/2025 (Previsto)', evento:'Embarque no navio', local:'Porto de Itajaí — Píer 3' },
   ]},
-  'ldcu': { status:'aguardando', statusLabel:'Aguardando Embarque', badgeClass:'badge-aguardando', produto:'Suco de Laranja Concentrado', peso:'22,0 ton', modal:'Marítimo', navio:'MV Citrus Queen (previsto)', bl:'BL-2025-CIT-001192', origem:'Bebedouro, SP', destino:'Porto de Santos, SP', eta:'20/06/2025', embarque:'12/06/2025 (previsto)', timeline:[
-    { dot:'done', data:'03/06/2025', evento:'Produto processado e envasado', local:'Usina Citrus, Bebedouro-SP' },
+  'ldcu': { status:'aguardando', statusLabel:'Aguardando Embarque', badgeClass:'badge-aguardando', produto:'Suco de Laranja Concentrado', peso:'22,0 ton', modal:'Marítimo', navio:'MV Laranjal (previsto)', bl:'BL-2025-CIT-003317', origem:'Bebedouro, SP', destino:'Porto de Santos, SP', eta:'20/06/2025', embarque:'12/06/2025 (previsto)', timeline:[
+    { dot:'done', data:'03/06/2025', evento:'Produto processado e envasado', local:'Usina Frutos do Vale, Bebedouro-SP' },
     { dot:'done', data:'05/06/2025', evento:'Transporte rodoviário concluído', local:'Terminal de Líquidos — Santos-SP' },
     { dot:'active', data:'06/06/2025', evento:'⏳ Aguardando janela de embarque', local:'Pátio do Porto, Santos — Área 7' },
-    { dot:'', data:'12/06/2025 (Previsto)', evento:'Embarque no navio MV Citrus Queen', local:'Porto de Santos — Berço 14' },
-    { dot:'', data:'20/06/2025 (Previsto)', evento:'Chegada ao destino', local:'Port of Antwerp — BE' },
+    { dot:'', data:'12/06/2025 (Previsto)', evento:'Embarque no navio MV Laranjal', local:'Porto de Santos — Berço 14' },
+    { dot:'', data:'20/06/2025 (Previsto)', evento:'Chegada ao destino', local:'Porto de Antuérpia — BE' },
   ]}
 };
 
@@ -338,7 +338,7 @@ function buscarStatus() {
         <div class="carga-title">Documentação</div>
         <div class="carga-row"><span class="carga-key">B/L ou CRT</span><span class="carga-val" id="pa-bl">${dados.bl}</span></div>
         <div class="carga-row"><span class="carga-key">Navio / Veículo</span><span class="carga-val" id="pa-navio">${dados.navio}</span></div>
-        <div class="carga-row"><span class="carga-key">Armador / Transp.</span><span class="carga-val">AgroLog S.A.</span></div>
+        <div class="carga-row"><span class="carga-key">Armador / Transp.</span><span class="carga-val">Intermodal Brasil Ltda.</span></div>
         <div class="carga-row"><span class="carga-key">Tipo Carga</span><span class="carga-val"><span class="pill">Exportação</span></span></div>
       </div>
     </div>
