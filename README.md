@@ -25,13 +25,11 @@ Projeto de automação desenvolvido usando o microsoft power automate de forma i
 
 **3.** O site não possui comunicação com back-end algum *(o que seria, no caso, o banco de dados onde os status dos contêineres estão guardados).*
 
-> **Exemplo:** conteinerA está em X cidade, X país e está se dirigindo a Y localidade através do navio Z. Esses são dados incluídos já no front-end o que, na vida real, nunca aconteceria. Os dados estariam protegidos no database, permitindo acesso somente através da chave da API.
+> **Exemplo:** conteinerA está em X cidade, X país e está se dirigindo a Y localidade através do navio Z. Esses são dados incluídos já no front-end o que, na vida real, nunca aconteceria e seria uma catástrofe para a segurança da informação. Os dados estariam protegidos no back-end, no database, permitindo acesso somente através da chave privada da API.
 
 Numa situação real, esses dados seriam obtidos através de uma requisição para a API para obter os dados no banco de dados da empresa (um GET). Porém, a informação retornaria da mesma forma que é retornada neste projeto, e o robô funcionaria da mesma forma.
 
-> **a.** Logo, todos os status são fictícios e servem para mostrar a funcionalidade do robô.
-
-Porém, mesmo se tratando de dados fictícios, a eficácia dele é demonstrada através do que ele faz a partir dos dados e como agiliza um trabalho manual e extremamente repetitivo.
+> **a.** Logo, leve em consideração que todos os status são fictícios e servem para mostrar a funcionalidade do robô. Mesmo se tratando de dados fictícios, a eficácia dele é demonstrada através do que ele faz a partir dos dados e como agiliza um trabalho manual e extremamente repetitivo.
 
 ---
 
