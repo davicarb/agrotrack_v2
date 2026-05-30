@@ -66,3 +66,8 @@ Porém, mesmo se tratando de dados fictícios, a eficácia dele é demonstrada a
 ## 🛠️ Stack
 
 `HTML/CSS/JS` · `Power Automate Desktop` · `Excel` · *(futuro: API REST + banco de dados real)*
+
+## Imagens do site:
+
+![Print1](https://raw.githubusercontent.com/davicarb/agrotrack_v2/refs/heads/main/web_picture.png)
+![Print2](https://raw.githubusercontent.com/davicarb/agrotrack_v2/refs/heads/main/web_picture2.png)
