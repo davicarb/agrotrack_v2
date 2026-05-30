@@ -36,7 +36,7 @@ Numa situação real, esses dados seriam obtidos através de uma requisição pa
 
 ---
 
-## Como rodar o projeto?
+## ❓ Como rodar o projeto
 
 **1.** crie uma pasta chamada `agrotrack_v2` na área de trabalho do seu pc
 
