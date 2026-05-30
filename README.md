@@ -1,8 +1,6 @@
-# 🌱 AgroTrack Robot v2 🌱
+# 🌱 Agrotrack robot v2 🌱
 
-**Criador:** Davi Carbone
-
-Projeto de automação desenvolvido usando Power Automate de forma independente com foco em automação de processos repetitivos.
+Projeto de automação desenvolvido usando o microsoft power automate de forma independente com foco em automação de processos repetitivos.
 
 ---
 
