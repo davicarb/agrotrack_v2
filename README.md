@@ -1,4 +1,4 @@
-# 🤖 AgroTrack Robot v2
+# 🌱 AgroTrack Robot v2 🌱
 
 **Criador:** Davi Carbone
 
