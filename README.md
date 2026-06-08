@@ -1,4 +1,4 @@
-# 🌱 agrotrack v2
+# 🌱 Agrotrack v2
 
 Projeto de automação desenvolvido usando o microsoft power automate de forma independente com foco em automação de processos repetitivos.
 
